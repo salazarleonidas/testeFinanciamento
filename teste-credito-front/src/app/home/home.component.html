@@ -1,0 +1,23 @@
+<div class="container">
+    <div *ngIf="!submitted">
+        <h1>Login</h1>
+        <form [formGroup]="userForm" (ngSubmit)="onSubmit(userForm)">
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" class="form-control" formControlName="username" />
+                <div class="alert alert-danger" [hidden]="userForm.controls['username'].valid">Username is required</div>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="text" class="form-control" formControlName="password" />
+                <div class="alert alert-danger" [hidden]="userForm.controls['password'].valid">Password is required</div>
+            </div>
+            <button type="submit" class="btn btn-default" [disabled]="!userForm.valid">Submit</button> 
+        </form>  
+    </div>
+    <div *ngIf="submitted">
+        <h2>Hello, {{submittedModel.Username}}!!</h2>
+        <a class="btn btn-default" href="/financiamento">Financiamentos</a>
+        <button class="btn btn-default" (click)="logout()">logout</button>
+    </div>
+</div>

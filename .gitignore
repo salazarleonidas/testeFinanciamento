@@ -36,11 +36,6 @@ msbuild.wrn
 # Visual Studio 2015
 .vs/
 
-.DS_STORE
-
-/dist/
-/bazel-out
-/integration/bazel/bazel-*
 *.log
 node_modules
 
@@ -61,7 +56,6 @@ pubspec.lock
 .vscode/settings.json
 .vscode/tasks.json
 *.swo
-*.swp
 modules/.settings
 modules/.vscode
 .vimrc
@@ -126,7 +120,7 @@ yarn-error.log
 .history/*
 
 # Miscellaneous
-/.angular/cache
+*/.angular/cache
 .sass-cache/
 /connect.lock
 /coverage
@@ -135,5 +129,4 @@ testem.log
 /typings
 
 # System files
-.DS_Store
 Thumbs.db

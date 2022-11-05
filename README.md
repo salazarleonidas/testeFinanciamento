@@ -31,5 +31,5 @@ Um cenário como proposto no item 1 do teste, onde um cliente solicita um financ
 
 Com base nas informações retornadas pelos serviços e em validações realisadas no serviço FinanciamentoService, teremos o resultado do pedido de crédito.
 
-
+ ![Microservices](microservice.jpg)
 
